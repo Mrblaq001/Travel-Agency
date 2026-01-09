@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamTravel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-form-container {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+        }
+
+        .map-container {
+            height: 450px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <div class="logo">
+            <i class="fas fa-paper-plane"></i> DREAMTRAVEL
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+    </header>
+
+    <section style="margin-top: 5rem;">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>Have questions or ready to book your next trip? Reach out to us today!</p>
+        </div>
+        <div class="grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p style="margin-bottom: 2rem;">Feel free to contact us via phone, email, or WhatsApp. You can also
+                    visit our office during business hours.</p>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <i class="fas fa-phone-alt" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <div>
+                            <h4 style="margin: 0;">Phone</h4>
+                            <p>08147341988</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <i class="fab fa-whatsapp" style="color: #25d366; font-size: 1.5rem;"></i>
+                        <div>
+                            <h4 style="margin: 0;">WhatsApp</h4>
+                            <p>08147341988</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <div>
+                            <h4 style="margin: 0;">Email</h4>
+                            <p>info@dreamtravel.com</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                        <div>
+                            <h4 style="margin: 0;">Office Address</h4>
+                            <p>Oyo State, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Interested Service</label>
+                        <select id="service">
+                            <option value="flight">Flight Booking</option>
+                            <option value="hotel">Hotel Reservation</option>
+                            <option value="package">Holiday Package</option>
+                            <option value="visa">Visa Assistance</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us about your travel plans..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 0;">
+        <div class="map-container">
+            <!-- Google Maps Placeholder Iframe -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507119.8249673995!3d7.9133181816768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10362da56a73c09b%3A0x8670183189914902!2sOyo!5e0!3m2!1sen!2sng!4v1704800000000!5m2!1sen!2sng"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" style="color: var(--white); margin-bottom: 1.5rem;">
+                    <i class="fas fa-paper-plane"></i> DREAMTRAVEL
+                </div>
+                <p>Making your travel dreams a reality since 2010. Professional, reliable, and adventurous.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Oyo State, Nigeria</p>
+                <p><i class="fas fa-phone"></i> 08147341988</p>
+                <p><i class="fas fa-envelope"></i> info@dreamtravel.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #333; padding-top: 2rem;">
+            <p>&copy; 2026 DreamTravel Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/2348147341988" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
